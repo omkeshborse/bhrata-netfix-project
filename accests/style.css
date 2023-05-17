@@ -1,0 +1,396 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-color: #232323;
+    overflow-x: hidden;
+}
+nav{ 
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+
+nav div ul li{
+    padding: 10px;
+}
+nav div img {
+    height: 80px;
+    padding: 10px;
+    margin: 20;
+    position: relative;
+    left: -80px;
+}
+
+nav div ul li select  {
+    font-size: 18px;
+    color:#fff;
+    border: 1 solid white;
+    background-color: #000;
+    border-radius: 5px;
+}
+nav div ul li select option {
+    font-size: 14px;
+    border: 0 solid white;
+}
+nav div ul li button{
+    font-size: 18px;
+    background: #e50913;
+    color: #fff;
+    padding: 2px 10px;
+    border: 0 solid;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    padding: 10px;
+    background-image: url(../src/images/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-repeat: no-repeat;
+    z-index: -5;
+    position: relative;
+    top: -10vh;
+    background-image:cover;
+    color: #fff;
+    opacity: 0.999999999999;
+}
+
+.heading{
+    position: relative;
+    top:30vh;
+    font-size: 1.5rem;
+}
+.hero-section .heading p{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;  
+}
+.hero-section .heading p:last-child{
+    font-size: 25px;
+}
+
+.hero-section .heading-signIn{
+    position: relative;
+    top: 20rem;
+}
+.hero-section .heading-signIn input{
+    font-size: 25px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    
+}
+.hero-section .heading-signIn input[type="email"]{
+    opacity: 0.7;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 20vw;
+    color: #ffffff;
+}
+.hero-section .heading-signIn button{
+    font-size: 30px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    background-color: #e50913;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 0px ;
+}
+.hero-section .heading-signIn button i {
+    margin-left: 10px;
+}
+
+.story-cards{
+    display: flex;
+    color: #fff;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -8vh;
+    flex-wrap: wrap;
+}
+/* .story-cards .device-section{
+    padding-left: 1rem;
+} */
+
+.story-cards .device-section h1{
+    font-size: 2.9rem;
+    /* padding-left: 30px; */
+    /* margin-left: 1rem; */
+    position: relative;
+    left: 5rem;
+}
+.story-cards .device-section p{
+    font-size: 16px;
+    /* margin-left: 3rem; */
+    position: relative;
+    left: 5rem;
+    
+}
+ .story-cards .tv-section img{
+    z-index: 2;
+    position: relative;
+    right: -45vh;
+}
+.story-cards .tv-section video{
+    z-index: 1;
+    position: relative;
+    right: 13vw;
+    top: -15vh;
+    
+} 
+
+/* download-section */
+
+.download-section {
+    display: flex;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: -6vh;
+
+}
+.download-section .short-section{
+    background-color: #000;
+    padding: 15px;
+    display: flex;
+    margin: 15px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -12vh;
+    left: 16vh;
+}
+.download-section .short-section div{
+    display: flex;
+    gap: 20px;
+}
+.download-section .short-section div p span{
+    color: blue;
+}
+.download-section .short-section img:first-child{
+    height: 60px;
+
+}
+.download-section .short-section img:last-child{
+    height: 60px;
+}
+
+.download-section-heding{
+    position: relative;
+    top: -5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-section-heding h1{
+    font-size: 4rem ;
+    /* font-weight: 500; */
+    padding: 2rem;
+}
+.download-section-heding h3{
+    font-size: 20px ;
+}
+
+/* Watch everywhere. */
+.watch{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: relative;
+    top: -4vh;
+    z-index: -2;
+    height: 600px;
+}
+.watch .watch-heading {
+    margin-left:20px ;
+}
+.watch .watch-heading h1{
+    font-size: 3.5rem;
+    margin-left: 25px;
+}
+.watch .watch-heading h2{
+    margin-left: 25px;
+}
+.watch .watch-device video{
+    z-index: -1;
+    position: relative;
+    top: -42vh;
+    right: -44vh;
+    width: 400px;
+}
+.watch .watch-device img{
+    /* z-index: -1; */
+    position: relative;
+    top: 15vh;
+    right: -30vh;
+
+}
+/* kids */
+.kids{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #000;
+    position: relative;
+     top: -2vh;
+    
+}
+.kids .kids-heading h1{
+    font-size: 3.5rem;
+   
+}
+.kids .kids-heading h2{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+/* Accordion  */
+/* Centers horizontally */
+.qna{
+  max-width: 60%;
+  margin: 0 auto;
+}
+/* Button default resets */
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* Styling the accordion buttons */
+.accordion-section{
+    background-color: #000;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 3rem;
+}
+.accordion{
+  width: 100%;
+  background-color: #303030;
+  color: #fff;
+  font-size: 20px;
+  padding: 18px 20px;
+  margin-bottom: 1px;
+  text-align: left;
+  /*  To push the plus sign to the right  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* adding the "plus" sign (+) */ 
+.accordion::after{
+  content: '\02795';
+  font-size: 20px;
+  color: #fff;
+}
+.panel{
+  background-color: #303030;
+  color: #fff;
+  margin-bottom: 4px;
+  overflow: hidden;
+  transition: max-height .33s cubic-bezier(.5,0,.1,1);
+}
+.panel > p {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.panel-closed{
+  max-height: 0;
+  overflow: hidden;
+}
+.panel-open{
+  max-height: 700px;
+}
+/* active class for accordion, adds the "cross sign (x)" */
+.accordion-active::after {
+  content: "\26CC";
+}
+
+.accordion-section .acc-email{
+    color: #fff;
+    text-align: center;
+}
+
+.accordion-section .acc-email h2{
+    font-weight: 400;
+    padding: 20px;
+}
+.accordion-section .acc-email input{
+    font-size: 25px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    margin-right: 10px;
+    
+}
+.accordion-section .acc-email button{
+    font-size: 25px;
+    padding: 15px;
+    background-color: #e50913;
+    color: #ffffff;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+/* footer section */
+footer a{
+    color: #ffffffb3;
+}
+footer ul{
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    height: auto;
+    padding: 1rem;
+    font-size: 14px;
+    padding-bottom: 2rem;
+}
+footer ul li select {
+    background-color: #000;
+    color: #fff;
+}
+footer ul li {
+    padding: 7px;
+}
+footer ul p{
+    margin-bottom: 15px;
+}
